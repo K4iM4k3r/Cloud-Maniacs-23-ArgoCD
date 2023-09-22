@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cloud-maniacs-blog-dev
+  namespace: argocd
+spec:
+  destination:
+    namespace: blog-dev
+    name: gcp-cluster
+  project: default
+  sources:
+  - repoURL: oci://registry-1.docker.io/bitnamicharts/wordpress
+    chart: wordpress
+    targetRevision: 17.1.9
+    helm:
+      releaseName: cloud-maniacs-blog-dev
+      valuesFiles:
+        - $config/values/common.yaml
+        - $config/values/dev.yaml
+
+  - repoURL: https://github.com/K4iM4k3r/Cloud-Maniacs-23-ArgoCD.git
+    targetRevision: HEAD
+    ref: config
+
+
