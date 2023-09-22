@@ -9,7 +9,7 @@ spec:
     name: in-cluster
   project: default
   sources:
-  - repoURL: oci://registry-1.docker.io/bitnamicharts/wordpress
+  - repoURL: registry-1.docker.io/bitnamicharts
     chart: wordpress
     targetRevision: 17.1.9
     helm:
