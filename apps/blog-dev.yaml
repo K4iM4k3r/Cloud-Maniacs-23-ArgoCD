@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: blog-dev
-    name: gcp-cluster
+    name: in-cluster
   project: default
   sources:
   - repoURL: oci://registry-1.docker.io/bitnamicharts/wordpress
