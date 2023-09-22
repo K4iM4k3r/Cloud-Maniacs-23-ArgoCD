@@ -1,0 +1,10 @@
+wordpressBlogName: Cloud Maniacs Blog
+
+metrics:
+  enabled: true 
+
+ingress:
+  enabled: true
+  annotations: 
+    kubernetes.io/tls-acme: "true"
+  ingressClassName: nginx-public
