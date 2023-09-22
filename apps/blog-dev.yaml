@@ -14,7 +14,7 @@ spec:
     targetRevision: 17.1.9
     helm:
       releaseName: cloud-maniacs-blog-dev
-      valuesFiles:
+      valueFiles:
         - $config/values/common.yaml
         - $config/values/dev.yaml
 
