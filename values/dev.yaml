@@ -1,2 +1,2 @@
-ingressdev:
+ingress:
   hostname: blog.dev.cloud-maniacs.claranetgcp.de
