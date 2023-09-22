@@ -8,4 +8,3 @@ ingress:
   annotations: 
     kubernetes.io/tls-acme: "true"
   ingressClassName: nginx-public
-  tls: true
